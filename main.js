@@ -18,8 +18,15 @@ document.addEventListener("DOMContentLoaded", function(e) {
 
     const novoElemento = document.createElement('h2');
 
-    novoElemento.innerHTML = "Alexandre"
+    novoElemento.innerHTML = "Texto renderizado do Javascript"
 
     document.body.appendChild(novoElemento);
+
+
+    const li = document.getElementsByTagName('li');
+
+    for(var i =0; i < li.length; i++){
+        li[i].classList.add('teste')
+    }
 
 })
