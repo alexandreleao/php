@@ -1,0 +1,19 @@
+{
+    "name": "alexandre/testes",
+    "description": "Instalaçao de pacotes via composer",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    },
+    "authors": [
+        {
+            "name": "alexandreleao",
+            "email": "erdleosalgueiro@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
