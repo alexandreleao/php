@@ -8,7 +8,7 @@ class Produto{
 
     public function getProduto()
     {
-        return "Produto {$this->getSegundoProduto()} {$this->getTerceiroProduto()}";
+        return "Produfto {$this->getSegundoProduto()} {$this->getTerceiroProduto()}";
     }
 
     protected function getSegundoProduto()
