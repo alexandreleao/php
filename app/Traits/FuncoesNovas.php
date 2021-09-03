@@ -27,6 +27,12 @@ trait FuncoesNovas
                 'nome' => 'Teste 3',
                 'titulo' => 'Titulo de teste 3',
                 'tags' => ['um', 'cinco', 'três']
+            ],
+           
+            [
+                'nome' => 'Teste 4',
+                'titulo' => 'Titulo de teste 4',
+                'tags' => ['um', 'três', 'cinco']
             ]
         ];
     }

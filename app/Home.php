@@ -17,7 +17,7 @@
 
     protected function getSegundaHome(){
 
-        $this->home = 'Home';
+        $this->home = 'Home segunda página';
 
         return 'segunda página home';
 

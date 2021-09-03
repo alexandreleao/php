@@ -18,12 +18,15 @@
         $loader = new \Twig\Loader\ArrayLoader([
             'index' => 'Render from twig {{ nome }} {{sobrenome}}! {{texto}} {{maiuscula}}',
             'teste' => '{{nova_variavel}} {{t}}',
-            'home'  => '{{home}} {{h}}'
+            'home'  => '{{home }} {{h}}',
+            'produto'  => '{{produto }} {{produto}}',
+            
         ]);
         $twig = new \Twig\Environment($loader);
         $user = new App\User;
         $teste = new App\Teste;
         $home = new  App\Home;
+        $produto = new App\Produto;
 
         
 
@@ -32,6 +35,7 @@
         echo "<p>" . $twig->render('teste', ['nova_variavel' =>$teste->getNomeTexto(), 't' => $teste->t ]). "</p>";
         echo "<br>";
         echo $twig ->render('home', ['home' =>$home->getHome(), 'home' => $home->home ]);
+        echo  "<p>" .$twig ->render('produto', ['produto' =>$produto->getProduto(), 'prod' => $produto->prod ]) ."</p>";
 
         $div= "<ul>";
         foreach($user->renderArray() as $item){
