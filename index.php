@@ -48,9 +48,39 @@
         $div .= "</ul>";
 
         echo $div;
- 
+        
 
-    
+
+        use App\Facade\Facade;
+        use App\Facade\Subsystem1;
+        use App\Facade\Subsystem2;
+        
+        
+        $subsystem1 = new Subsystem1();
+        $subsystem2 = new Subsystem2();
+        $facade = new Facade($subsystem1, $subsystem2);
+        clientCode($facade);
+        function clientCode(Facade $facade)
+        {
+            echo $facade->operation();
+        }
+
+
+
+
+        echo "<hr>";
+        use App\AbstractClass\Filha1;
+        use App\AbstractClass\Filha2;
+        
+        $filha1 = new Filha1;
+        $filha1->imprimir();
+        echo $filha1->valorComPrefixo('prefixo');
+        echo "<hr>";
+        $filha2 = new Filha2;
+        $filha2->imprimir();
+        echo $filha2->valorComPrefixo('Outro');
+
+
     ?>
 </body>
 </html>
